@@ -7,20 +7,32 @@
   <style>
     :root {
       --liverpool-pink: #e20074;
-      --liverpool-dark: #333333;
       --liverpool-white: #ffffff;
+      --overlay-dark: rgba(0, 0, 0, 0.6);
     }
 
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: var(--liverpool-white);
-      color: var(--liverpool-dark);
+      color: var(--liverpool-white);
+      background: url('altar.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--overlay-dark);
+      z-index: -1;
     }
 
     header {
-      background-color: var(--liverpool-pink);
-      color: var(--liverpool-white);
+      background-color: rgba(226, 0, 116, 0.85);
       padding: 2rem 1rem;
       text-align: center;
     }
@@ -39,6 +51,8 @@
       padding: 2rem 1.5rem;
       max-width: 900px;
       margin: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 12px;
     }
 
     h2 {
@@ -46,16 +60,16 @@
       margin-top: 2rem;
     }
 
-    .altar-img {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin: 1rem 0;
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
     }
 
     footer {
-      background-color: var(--liverpool-dark);
+      background-color: rgba(0, 0, 0, 0.8);
       color: var(--liverpool-white);
       text-align: center;
       padding: 1rem;
@@ -87,7 +101,26 @@
       Nuestra ofrenda representa un remolque en honor a los operadores de Red Primaria que, con valentía y compromiso, enfrentan rutas difíciles para abastecer a los centros regionales. Algunos no han llegado a su destino final, víctimas de asaltos, bloqueos o accidentes. Esta ofrenda honra su memoria y su sacrificio.
     </p>
 
-    <img src="altar.jpg" alt="Imagen del altar a Yum Kimil" class="altar-img" />
+    <h2>🌺 Significado de los Elementos del Altar Yucateco</h2>
+    <p>
+      El altar de Janal Pixán en Yucatán es un puente espiritual entre los vivos y los difuntos. Cada elemento tiene un propósito simbólico que honra la memoria y guía el regreso de las almas:
+    </p>
+    <ul>
+      <li><strong>Velas:</strong> Representan la luz que guía a las ánimas en su camino desde el más allá.</li>
+      <li><strong>Agua:</strong> Se ofrece para calmar la sed del alma tras su largo viaje.</li>
+      <li><strong>Sal:</strong> Purifica y protege el altar de malas energías.</li>
+      <li><strong>Flores (cempasúchil):</strong> Su color y aroma atraen a los espíritus y decoran el camino.</li>
+      <li><strong>Incienso o copal:</strong> Eleva las oraciones y limpia el ambiente espiritual.</li>
+      <li><strong>Pan de muerto:</strong> Símbolo del ciclo de la vida y la muerte, se ofrece como alimento espiritual.</li>
+      <li><strong>Comida típica:</strong> Se colocan platillos que el difunto disfrutaba en vida, como mucbilpollo, tamales, atole o dulce de papaya.</li>
+      <li><strong>Fotografía del difunto:</strong> Es el centro del altar, la razón de la ofrenda.</li>
+      <li><strong>Cruz de cal:</strong> Representa los cuatro puntos cardinales y ayuda al alma a orientarse.</li>
+      <li><strong>Papel picado:</strong> Simboliza el viento y la fragilidad de la vida.</li>
+      <li><strong>Objetos personales:</strong> Se colocan pertenencias o recuerdos que conectan emocionalmente con el ser querido.</li>
+    </ul>
+    <p>
+      En nuestro altar, estos elementos se combinan con la figura de Yum Kimil como guardián del tránsito espiritual, y con el remolque como símbolo de los caminos recorridos por los operadores de Red Primaria. Cada vela encendida honra a quienes no llegaron a su destino, pero siguen presentes en nuestra memoria.
+    </p>
 
     <h2>🛡️ Guerreros Yum Kimil</h2>
     <p>
