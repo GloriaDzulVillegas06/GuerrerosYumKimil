@@ -15,8 +15,9 @@
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       color: var(--liverpool-white);
-      background: url('altar.png') no-repeat center center fixed;
+      background: url('altar.png') no-repeat center center;
       background-size: cover;
+      background-attachment: fixed;
       position: relative;
     }
 
@@ -29,6 +30,12 @@
       height: 100%;
       background-color: var(--overlay-dark);
       z-index: -1;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-attachment: scroll;
+      }
     }
 
     header {
@@ -98,8 +105,8 @@
 
     <h2>🚛 Representación de la Ofrenda</h2>
     <p>
-      Nuestra ofrenda representa un remolque en honor a todos los operadores de Red primaria que día a día se arriesgan y comprometen para llegar a los destinos mas complicados y traer la mercancía para los centros regionales y demás sitios. En esta labor tan difícil algunos, no han podido llegar hasta el ultimo destino, lamentablemente diversas situaciones en las que sufren asaltos, bloqueos o imprudencias de otros conductores mientras viajan por carretera prefieren arriesgar su vida, antes que la de los demás.
-Es por ellos que los Guerreros Yum Kimil con todo el respeto hacia los que no están en el mundo terrenal realiza esta ofrenda.
+      Nuestra ofrenda representa un remolque en honor a todos los operadores de Red primaria que día a día se arriesgan y comprometen para llegar a los destinos más complicados y traer la mercancía para los centros regionales y demás sitios. En esta labor tan difícil algunos, no han podido llegar hasta el último destino, lamentablemente diversas situaciones en las que sufren asaltos, bloqueos o imprudencias de otros conductores mientras viajan por carretera prefieren arriesgar su vida, antes que la de los demás.
+      Es por ellos que los Guerreros Yum Kimil con todo el respeto hacia los que no están en el mundo terrenal realizan esta ofrenda.
     </p>
 
     <h2>🌺 Significado de los Elementos del Altar Yucateco</h2>
@@ -130,7 +137,7 @@ Es por ellos que los Guerreros Yum Kimil con todo el respeto hacia los que no es
   </section>
 
   <footer>
-    &copy; 2025 Guerrero Yum Kimil | Inspirado en la mitología maya y los héroes de la carretera
+    &copy; 2025 Guerreros Yum Kimil | Inspirado en la mitología maya y los héroes de la carretera
   </footer>
 
 </body>
